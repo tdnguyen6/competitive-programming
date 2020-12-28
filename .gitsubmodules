@@ -1,0 +1,8 @@
+[submodule "leetcode"]
+	branch = main
+[submodule "kattis"]
+	branch = master
+[submodule "hacker-earth"]
+	branch = master
+[submodule "free-code-camp"]
+	branch = main
