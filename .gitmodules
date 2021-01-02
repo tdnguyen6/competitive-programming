@@ -10,3 +10,6 @@
 [submodule "free-code-camp"]
 	path = free-code-camp
 	url = https://github.com/tidunguyen/free-code-camp
+[submodule "codeforces"]
+	path = codeforces
+	url = https://github.com/tidunguyen/codeforces
