@@ -13,7 +13,7 @@ using namespace std;
 #define RREP(i, j) RFOR(i, j, 0, 1)
 #define all(cont) cont.begin(), cont.end()
 #define rall(cont) cont.end(), cont.begin()
-#define FOREACH(it, l) for (auto it = l.begin(); it != l.end(); it++)
+#define FE(it, l) for (auto it = l.begin(); it != l.end(); it++)
 #define IN(A, B, C) assert(B <= A && A <= C)
 #define MP make_pair
 #define PB push_back
@@ -40,26 +40,33 @@ typedef unsigned long int uint32;
 typedef long long int int64;
 typedef unsigned long long int uint64;
 
-int solve(int i) {
-    return i;
+ll maxS(multiset<ll> s) {
+    return *s.rbegin();
 }
 
-int main()
-{
+ll minS(multiset<ll> s) {
+    return *s.begin();
+}
+
+pair<int, int> getMinMaxB(set<multiset<ll>> &sb) {
+    auto it = sb.begin();
+    auto mxBid = 0, mnBid = 0;
+    REP(i, sb.size()) {
+        auto mxB = *next(sb.begin(), mxBid);
+        auto mnB = *next(sb.begin(), mnBid);
+        auto cB = *next(sb.begin(), i);
+        if (maxS(cB) > maxS(mxB))
+            mxBid = i;
+        if (minS(cB) < maxS(mnB))
+            mnBid = i;
+    }
+    return {mxBid, mnBid};
+}
+
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    // auto a = freopen("a.in", "r", stdin);
-    // auto b = freopen("a.out", "w", stdout);
-    // if (!a || !b)
-    //     cout << "uh oh" << endl;
 
-    int n_test;
-    cin >> n_test;
-    while (n_test--)
-    {
-        int tmp;
-        cin >> tmp;
-        cout << solve(tmp) << '\n';
-    }
+    cout << "Hello Wold!";
 }

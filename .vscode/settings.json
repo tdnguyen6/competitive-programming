@@ -19,6 +19,9 @@
         "chrono": "cpp",
         "limits": "cpp",
         "bitset": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "cmath": "cpp",
+        "*.tcc": "cpp",
+        "iosfwd": "cpp"
     }
 }

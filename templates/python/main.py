@@ -1,4 +1,6 @@
 ############## ---- Fast IO Functions ---- ##############
+from typing import *
+from collections import *
 import io
 import os
 import sys
@@ -30,11 +32,12 @@ def o(w='', end='\n'):
     sys.stdout.write(str(w) + end)
 #########################################################
 
+
 def solve(*args):
     return args
+
 
 for _ in range(ii()):
     N = ii()
     A = imil()
     o(solve(N, A))
-

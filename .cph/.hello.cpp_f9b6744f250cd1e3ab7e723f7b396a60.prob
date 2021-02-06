@@ -1,0 +1,1 @@
+{"name":"hello","group":"Kattis","url":"https://open.kattis.com/problems/hello","interactive":false,"memoryLimit":1024,"timeLimit":5000,"tests":[],"testType":"single","input":{"type":"stdin"},"output":{"type":"stdout"},"languages":{"java":{"mainClass":"Main","taskClass":"HelloWorld"}},"srcPath":"/home/tidu/code/cp/hello.cpp"}
